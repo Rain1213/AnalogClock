@@ -1,0 +1,233 @@
+*{
+	font-family: sans-serif;
+	color: white;
+	font-size: 20px;
+}
+@media screen and (max-width:1040px){
+	*{
+		font-size:18px;
+		
+	}
+}
+
+@media screen and (max-width:720px){
+	*{
+		font-size:14px;
+		
+	}
+}
+
+@media screen and (max-width:480px){
+	*{
+		font-size:14px;
+	}
+
+}
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("src/clock_bg.jpg")no-repeat center center fixed;
+	background size: cover;
+	-webkit-background-size: cover;
+}
+.clock{
+	width: 30rem;
+	height: 30rem;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 50%;
+	border:4px solid black;
+	position: relative;
+	margin: auto auto;
+}
+
+.clock .hrradius{
+	position: absolute;
+	height: 50%;
+	width: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border: 2px solid black;
+	border-radius: 50%;
+}
+
+.clock .minradius{
+	position: absolute;
+	height: 73%;
+	width: 73%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border: 2px solid black;
+	border-radius: 50%;
+}
+
+.clock .number1{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(30deg);
+}
+.clock .number2{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(60deg);
+}
+
+.clock .number3{
+	font-size: 1.5rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(90deg);
+}
+
+.clock .number4{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(120deg);
+}
+
+.clock .number5{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(150deg);
+}
+.clock .number6{
+	font-size: 1.5rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(180deg);
+}
+.clock .number7{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(210deg);
+}
+
+.clock .number8{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(240deg);
+}
+.clock .number9{
+	font-size: 1.5rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(270deg);
+}
+.clock .number10{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(300deg);
+}
+.clock .number11{
+	font-size: 1.2rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(330deg);
+}
+.clock .number12{
+	font-size: 1.5rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	 text-align: center;
+	 transform: rotate(0deg);
+}
+
+.clock .hour{
+	--rotation: 0;
+	height: 50%;
+	position: absolute; 
+	bottom: 50%;
+	left: 50%;
+	transform-origin: bottom;
+	transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+	
+
+}
+.clock .hour .circle{
+	position: absolute;
+	height: 3.2rem;
+	width: 3.2rem;
+	top: 40%;
+	left: 50%;
+	border-radius: 50%;
+	background-color: #F5F5F5;
+	transform: translate(-50%);
+
+}
+
+.clock .minute{
+	--rotation: 0;
+	height: 50%;
+	position: absolute; 
+	bottom: 50%;
+	left: 50%;
+	transform-origin: bottom;
+	transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+	
+
+}
+.clock .minute .circle{
+	position: absolute;
+	height: 2rem;
+	width: 2rem;
+	top: 20%;
+	left: 50%;
+	border-radius: 50%;
+	background-color: #F5F5F5;
+	transform: translate(-50%);
+
+}
+
+.clock .second{
+	--rotation: 0;
+	height: 50%;
+	position: absolute; 
+	bottom: 50%;
+	left: 50%;
+	transform-origin: bottom;
+	transform: translate(-50%) rotate(calc(var(--rotation) * 1deg));
+	
+
+}
+.clock .second .circle{
+	position: absolute;
+	height: 1rem;
+	width: 1rem;
+	top: 0%;
+	left: 50%;
+	border-radius: 50%;
+	background-color:#FFDEAD;
+	transform: translate(-50%);
+
+}
+
